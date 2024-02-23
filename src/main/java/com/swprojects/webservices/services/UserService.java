@@ -13,6 +13,7 @@ import com.swprojects.webservices.repositories.UserRepository;
 import com.swprojects.webservices.services.exceptions.DatabaseException;
 import com.swprojects.webservices.services.exceptions.ResourceNotFoundException;
 
+import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
 
 @Service
@@ -34,18 +35,17 @@ public class UserService {
 		return userRepository.save(obj);
 	}
 
-	/*public void excluir(Long id) {
-
-		try {
-			userRepository.deleteById(id);
-
-		} catch (EmptyResultDataAccessException e) {
-			throw new ResourceNotFoundException(id);
-
-		} catch (DataIntegrityViolationException e) {
-			throw new DatabaseException(e.getMessage());
-		}
-	}*/
+	/*
+	 * public void excluir(Long id) {
+	 * 
+	 * try { userRepository.deleteById(id);
+	 * 
+	 * } catch (EmptyResultDataAccessException e) { throw new
+	 * ResourceNotFoundException(id);
+	 * 
+	 * } catch (DataIntegrityViolationException e) { throw new
+	 * DatabaseException(e.getMessage()); } }
+	 */
 
 	@Transactional
 	public void delete(Long id) {
@@ -64,9 +64,15 @@ public class UserService {
 	}
 
 	public User update(Long id, User obj) {
-		User entity = userRepository.getReferenceById(id);
-		updateData(entity, obj);
-		return userRepository.save(entity);
+		try {
+			User entity = userRepository.getReferenceById(id);
+			updateData(entity, obj);
+			return userRepository.save(entity);
+
+		} catch (EntityNotFoundException e) {
+			e.printStackTrace();
+			throw new ResourceNotFoundException(id);
+		}
 	}
 
 	private void updateData(User entity, User obj) {
