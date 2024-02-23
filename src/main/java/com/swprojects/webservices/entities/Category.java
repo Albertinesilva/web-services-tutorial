@@ -26,7 +26,7 @@ public class Category implements Serializable {
 
 	// Utilizada para a JPA não mapear a entidade!
 	// @Transient
-	
+
 	@JsonIgnore
 	@ManyToMany(mappedBy = "categories")
 	private Set<Product> products = new HashSet<>();
