@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\projetos"/>
 			<item value="C:\projetos\webservices"/>
 		</list>
 		<list key="projectNameTemplate">
