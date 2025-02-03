@@ -396,7 +396,7 @@ Durante o desenvolvimento deste projeto, foram exploradas diversas técnicas e p
 
 Esse projeto apresenta uma base sólida para a criação de Web Services com Spring Boot, incluindo uma aplicação web funcional e robusta, capaz de gerenciar dados de forma eficiente e segura. As técnicas e práticas aplicadas durante o desenvolvimento proporcionam uma base sólida para projetos futuros e preparam os desenvolvedores para desafios reais no desenvolvimento de software.
 
-Em resumo, este projeto foi uma excelente oportunidade para aprofundar os conhecimentos em POO, JPA, Spring Boot e práticas de desenvolvimento de software, sob a orientação do professor Nélio Alves.
+Em resumo, este projeto foi uma excelente oportunidade para aprofundar os conhecimentos em POO, JPA, Spring Boot e práticas de desenvolvimento de software, sob a orientação do professor [Nélio Alves](https://github.com/acenelio).
 
 #### 📌 Autor
 
