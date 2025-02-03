@@ -1,8 +1,8 @@
 <h1 align="center">🔗 Projeto web services com Spring Boot e JPA / Hibernate </h1>
 
-<h2 align="center">Curso: Programação Orientada a Objetos com Java - Udemy </h2>
+<h2 align="center">Curso Udemy: Programação Orientada a Objetos com Java</h2>
 
-Este projeto faz parte do curso de Programação Orientada a Objetos com Java, ministrado na Udemy. O objetivo principal é criar uma aplicação web utilizando Spring Boot e JPA / Hibernate, estruturando o sistema em camadas lógicas e implementando operações básicas de CRUD (Create, Retrieve, Update, Delete). Durante o desenvolvimento, diversas técnicas serão aplicadas para configurar e manipular um banco de dados de teste (H2), povoar o banco de dados, e tratar exceções de forma eficiente.
+Este projeto faz parte do curso de Programação Orientada a Objetos com Java, ministrado na Udemy. O objetivo principal foi criar uma aplicação web utilizando Spring Boot e JPA / Hibernate, estruturando o sistema em camadas lógicas e implementando operações básicas de CRUD (Create, Retrieve, Update, Delete). Durante o desenvolvimento, diversas técnicas foram aplicadas para configurar e manipular um banco de dados de teste (H2), povoar o banco de dados e tratar exceções de forma eficiente.
 
 ## 📌 Objetivos
 - Criar projeto Spring Boot Java 
@@ -10,8 +10,8 @@ Este projeto faz parte do curso de Programação Orientada a Objetos com Java, m
 - Estruturar camadas lógicas: resource, service, repository 
 - Configurar banco de dados de teste (H2) 
 - Povoar o banco de dados 
-- CRUD - Create, Retrieve, Update, Delete 
-- Tratamento de exceções
+- Implementar operações CRUD (Create, Retrieve, Update, Delete) 
+- Realizar o tratamento de exceções
 
 ## Modelo de domínio utilizado no projeto
 
@@ -209,7 +209,7 @@ o1.setPayment(pay1);
 
 orderRepository.save(o1);
 ```
-**Exemplos de `JSON` após as relações entre `User`, `Product`, `Category`, `OrderItem`, `Order` e `Payment`**
+**Exemplos de `JSON` retornado após estabelecer relações entre `User`, `Product`, `Category`, `OrderItem`, `Order` e `Payment`**
 ```json
 [
     {
@@ -370,7 +370,7 @@ Este projeto de web services com Spring Boot e JPA / Hibernate foi desenvolvido 
 
 **Objetivos do Projeto**
 
-O objetivo principal deste projeto é criar uma aplicação web robusta, utilizando Spring Boot e JPA / Hibernate para gerenciar um banco de dados relacional. Durante o desenvolvimento do projeto, são abordados vários conceitos e técnicas avançadas, incluindo:
+O principal objetivo deste projeto é desenvolver uma aplicação web robusta, utilizando Spring Boot e JPA/Hibernate para gerenciar um banco de dados relacional. Durante o desenvolvimento, diversos conceitos e técnicas avançadas são abordados, incluindo:
 
 - **Programação Orientada a Objetos (POO):** Aplicação dos conceitos fundamentais de POO para criar um modelo de domínio estruturado e eficiente.
 - **JPA (Java Persistence API):** Configuração e uso de JPA para mapear entidades e gerenciar o banco de dados.
@@ -392,9 +392,9 @@ Durante o desenvolvimento deste projeto, foram exploradas diversas técnicas e p
 - **Associações entre Entidades:** Configuração de relações entre entidades, como categorias e produtos, pedidos e itens de pedido, etc.
 - **Interface de Exibição:** Ajustes na interface de exibição para proporcionar uma melhor experiência visual e usabilidade.
 
-**Resultados**
+**Conclusão**
 
-Este projeto resultou em uma aplicação web funcional e robusta, capaz de gerenciar dados de forma eficiente e segura. As técnicas e práticas aplicadas durante o desenvolvimento proporcionam uma base sólida para projetos futuros e preparam os desenvolvedores para desafios reais no desenvolvimento de software.
+Esse projeto apresenta uma base sólida para a criação de Web Services com Spring Boot, incluindo uma aplicação web funcional e robusta, capaz de gerenciar dados de forma eficiente e segura. As técnicas e práticas aplicadas durante o desenvolvimento proporcionam uma base sólida para projetos futuros e preparam os desenvolvedores para desafios reais no desenvolvimento de software.
 
 Em resumo, este projeto foi uma excelente oportunidade para aprofundar os conhecimentos em POO, JPA, Spring Boot e práticas de desenvolvimento de software, sob a orientação do professor Nélio Alves.
 
