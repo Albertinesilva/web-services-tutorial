@@ -112,6 +112,57 @@ spring.jpa.properties.hibernate.format_sql=true
 - Associação one-to-one com `Payment`
 - Métodos `Subtotal` e `Total`
 
+## 📁 Estrutura do Projeto
+```java
+src/
+└── main/
+    └── java/
+        └── com/
+            └── tutorial/
+                └── web_services/
+                    ├── config/
+                    │   └── (configurações gerais da aplicação)
+                    ├── entities/
+                    │   ├── enums/
+                    │   │   └── (definições de enumeradores usados nas entidades)
+                    │   ├── pk/
+                    │   │   └── (chaves primárias compostas)
+                    │   ├── Category.java (entidade de categorias)
+                    │   ├── Order.java (entidade de pedidos)
+                    │   ├── OrderItem.java (itens de um pedido)
+                    │   ├── Payment.java (entidade de pagamentos)
+                    │   ├── Product.java (entidade de produtos)
+                    │   └── User.java (entidade de usuários)
+                    ├── repositories/
+                    │   └── (interfaces para persistência de dados)
+                    ├── resources/
+                    │   ├── exceptions/
+                    │   │   └── (tratamento de exceções específicas)
+                    │   ├── CategoryResource.java (controle de recursos de categorias)
+                    │   ├── OrderResource.java (controle de recursos de pedidos)
+                    │   ├── ProductResource.java (controle de recursos de produtos)
+                    │   └── UserResource.java (controle de recursos de usuários)
+                    ├── services/
+                    │   ├── exceptions/
+                    │   │   ├── DatabaseException.java (exceção para erros no banco de dados)
+                    │   │   └── ResourceNotFoundException.java (exceção para recursos não encontrados)
+                    │   ├── CategoryService.java (lógica de negócio de categorias)
+                    │   ├── OrderService.java (lógica de negócio de pedidos)
+                    │   ├── ProductService.java (lógica de negócio de produtos)
+                    │   └── UserService.java (lógica de negócio de usuários)
+                    └── WebServicesApplication.java
+                        (classe principal da aplicação)
+    └── resources/
+        ├── static/
+        │   └── (arquivos estáticos da aplicação)
+        ├── templates/
+        │   └── (templates para exibição)
+        ├── application-dev.properties (configurações para ambiente de desenvolvimento)
+        ├── application-prod.properties (configurações para ambiente de produção)
+        ├── application-test.properties (configurações para ambiente de teste)
+        └── application.properties (configurações gerais da aplicação)
+```
+
 **Objects:**
 ```java
 Category cat1 = new Category(null, "Electronics");
