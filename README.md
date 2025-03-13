@@ -398,6 +398,6 @@ Esse projeto apresenta uma base sólida para a criação de Web Services com Spr
 
 Em resumo, este projeto foi uma excelente oportunidade para aprofundar os conhecimentos em POO, JPA, Spring Boot e práticas de desenvolvimento de software, sob a orientação do professor [Nélio Alves](https://github.com/acenelio).
 
-#### 📌 Autor
-
-👨‍💻 **Albert Silva**
+| 🌎 LinkedIn | 👨‍💻 **Autor** |
+|------------|---------------|
+| [LinkedIn](https://www.linkedin.com/in/albert-backend-java-spring-boot/) | [Albert Silva](https://www.linkedin.com/in/albert-backend-java-spring-boot/) |
